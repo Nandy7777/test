@@ -1,0 +1,18 @@
+.mob-menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition-property: fill var(--duration-time);
+    transition-timing-function: var(--timing-function);
+    &:hover,
+    &:focus {
+    fill: rgba(212, 20, 67, 1);
+    }
+    cursor: pointer;
+
+    // @media screen and (min-width: 768px) {
+    //     display: none;
+    // }
+}
