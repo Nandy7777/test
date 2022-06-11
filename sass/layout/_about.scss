@@ -17,7 +17,7 @@ img {
     display: block;
     max-width: 100%; 
     height: auto;
-     
+    
 }
 
 .about {
@@ -43,20 +43,14 @@ img {
     }
 }
 
-.container {
-}
-
 .title-wrap{
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 .about-wrap{
    @media screen and (min-width: 768px) {
         display: flex;
     }
-
 }
 
 .picture-wrap{
@@ -66,12 +60,9 @@ img {
     @media screen and (min-width: 1280px) {
         margin-right: 139px;
     }
-
-
 }
 
 .about-title-lable {
-    
     margin-bottom: 15px;
     font-family: Titan One;
     font-weight: 400;
@@ -117,15 +108,12 @@ img {
     max-width: 220px;
     @media screen and (min-width: 768px) {
        max-width: 334px;
-       
     }
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
         padding-bottom: 99px;
         max-width: 463px;
     }
-
-    
 }
 
 .about-top-text {
@@ -159,20 +147,23 @@ img {
 
 .btn-read-more{
     position: relative;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding: 11px 37px;
     min-width: 176px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
     display: flex;
-    // justify-content: center;
     text-align: center;
+    align-items: center;
     color: #D41443;
     background: #FFFFFF;
     border-radius: 22px;
     border-color: transparent;
-    @media screen and (min-width: 1280px) {
+    &:hover,
+    &:focus {
+        background: #ECEBEB;
+    }
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.31;
     }
@@ -180,5 +171,5 @@ img {
 
 .icon-vector{
     position: absolute;
-    right: 134px;
+    right: 38px;
 }
