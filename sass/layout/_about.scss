@@ -24,15 +24,11 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #FFF5F6;
-    .container{
-        background-image: url(/images/milk_mob_1x.png);
-        background-repeat: no-repeat;
-        background-position: 50% 80%;
-        background-size: contain; 
-        @media screen and (min-width: 768px) {
+    
+    @media screen and (min-width: 768px) {
         background-image: none;
     }  
-    }
+    
     @media screen and (min-width: 768px) {
         padding-top: 20px;
         padding-bottom: 80px;
@@ -43,7 +39,7 @@ img {
     }
 }
 
-.title-wrap{
+.about__title-wrap{
     text-align: center; 
 }
 
@@ -62,7 +58,7 @@ img {
     }
 }
 
-.about-title-lable {
+.about__lable {
     margin-bottom: 15px;
     font-family: Titan One;
     font-weight: 400;
@@ -82,7 +78,7 @@ img {
     }
 }
 
-.about-title {
+.about__title {
     margin-bottom: 32px;
     margin-right: auto;
     margin-left: auto; 
@@ -104,8 +100,8 @@ img {
     }
 }
 
-.about-descr {
-    max-width: 220px;
+.about__descr {
+    width: 220px;
     @media screen and (min-width: 768px) {
        max-width: 334px;
     }
@@ -116,7 +112,7 @@ img {
     }
 }
 
-.about-top-text {
+.about__top-text {
     margin-bottom: 40px;
     font-weight: 500;
     font-size: 12px;
@@ -132,7 +128,7 @@ img {
     }
 }
 
-.about-botom-text {
+.about__botom-text {
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 12px;
@@ -145,7 +141,7 @@ img {
 
 }
 
-.btn-read-more{
+.about__btn{
     position: relative;
     padding: 11px 37px;
     min-width: 176px;
@@ -169,7 +165,7 @@ img {
     }
 }
 
-.icon-vector{
+.about__btn-vector{
     position: absolute;
     right: 38px;
 }
