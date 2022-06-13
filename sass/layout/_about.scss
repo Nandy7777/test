@@ -17,18 +17,13 @@ img {
     display: block;
     max-width: 100%; 
     height: auto;
-    
 }
 
 .about {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #FFF5F6;
-    
-    @media screen and (min-width: 768px) {
-        background-image: none;
-    }  
-    
+    background-color: #FFF5F6; 
     @media screen and (min-width: 768px) {
         padding-top: 20px;
         padding-bottom: 80px;
@@ -39,6 +34,30 @@ img {
     }
 }
 
+.overlay{
+    background-image: url(../images/about/about-bg-mob-1x.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-mob-2x.png);
+    }
+    background-repeat: no-repeat;
+    background-position: 50% 73%;
+    background-size: contain;
+    @media screen and (min-width: 768px) {
+        background-image: none;
+    }
+    @media screen and (min-width: 1280px) {
+        background-position: bottom;
+        background-image: url(../images/about/about-bg-desk-1x.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-bg-desk-2x.png);
+        }
+    }
+}
+
 .about__title-wrap{
     text-align: center; 
 }
@@ -46,7 +65,9 @@ img {
 .about-wrap{
    @media screen and (min-width: 768px) {
         display: flex;
+        align-items: unset;
     }
+    align-items: center;
 }
 
 .picture-wrap{
@@ -92,6 +113,7 @@ img {
     @media screen and (min-width: 768px) {
        font-size: 48px;
        line-height: 0.87;
+       margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 58px;
@@ -101,13 +123,12 @@ img {
 }
 
 .about__descr {
-    width: 220px;
+    max-width: 220px;
     @media screen and (min-width: 768px) {
        max-width: 334px;
     }
     @media screen and (min-width: 1280px) {
-        padding-top: 72px;
-        padding-bottom: 99px;
+        
         max-width: 463px;
     }
 }
@@ -121,6 +142,7 @@ img {
     @media screen and (min-width: 768px) {
        font-size: 14px;
        line-height: 1.79;
+       margin-bottom: 32px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 16px;
@@ -137,8 +159,12 @@ img {
     @media screen and (min-width: 768px) {
        font-size: 14px;
        line-height: 1.79;
+       margin-bottom: 40px;
     }
-
+    @media screen and (min-width: 1280px) {
+       font-size: 14px;
+       line-height: 1.79;
+    }
 }
 
 .about__btn{
