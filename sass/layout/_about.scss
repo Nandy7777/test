@@ -20,7 +20,6 @@ img {
 }
 
 .about {
-    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #FFF5F6; 
@@ -28,13 +27,14 @@ img {
         padding-top: 20px;
         padding-bottom: 80px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 }
 
 .overlay{
+    max-width: 1280px;
     background-image: url(../images/about/about-bg-mob-1x.png);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -47,7 +47,7 @@ img {
     @media screen and (min-width: 768px) {
         background-image: none;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         background-position: bottom;
         background-image: url(../images/about/about-bg-desk-1x.png);
         @media (min-device-pixel-ratio: 2),
@@ -71,10 +71,10 @@ img {
 }
 
 .picture-wrap{
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
        margin-right: 32px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin-right: 139px;
     }
 }
@@ -93,7 +93,7 @@ img {
        font-size: 26px;
        line-height: 1.15;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 30px;
         line-height: 1.13;
     }
@@ -115,7 +115,7 @@ img {
        line-height: 0.87;
        margin-bottom: 40px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 58px;
         line-height: 1.14;
         margin-bottom: 79px;
@@ -123,12 +123,10 @@ img {
 }
 
 .about__descr {
-    max-width: 220px;
     @media screen and (min-width: 768px) {
        max-width: 334px;
     }
-    @media screen and (min-width: 1280px) {
-        
+    @media screen and (min-width: 1200px) {   
         max-width: 463px;
     }
 }
