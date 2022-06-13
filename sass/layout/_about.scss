@@ -15,7 +15,7 @@ ol {
 
 img {
     display: block;
-    max-width: 100%; 
+    width: 100%; 
     height: auto;
 }
 
@@ -77,10 +77,13 @@ img {
 }
 
 .picture-wrap{
+  
     @media screen and (min-width: 768px) {
-       margin-right: 32px;
+        width: 336px;
+        margin-right: 32px;
     }
     @media screen and (min-width: 1200px) {
+        width: 501px;
         margin-right: 139px;
     }
 }
